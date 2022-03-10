@@ -5,6 +5,8 @@
 
 ### 安装编译px4的工具  
 
+[安装编译px4的工具链](https://www.ncnynl.com/archives/201709/2009.html)
+
 ```shell
 sudo add-apt-repository ppa:george-edison55/cmake-3.x -y
 sudo apt-get update
@@ -19,20 +21,28 @@ sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8
 ```
 
 
-* 1.新建一个工作区    
+* 1.新建一个工作区 
+```shell   
 mkdir -p PX4/src    
 cd PX4/src  
 catkin_init_workspace  
 git clone https://github.com/PX4/Firmware.git    
-
+```
 * 2.下载源码  
+```shell
 cd PX4/src  
-git clone https://github.com/PX4/Firmware.git  
-
 //递归到子目录
 cd Firmware/  
+git checkout -b v1.12.0 //与自己实机版本一致  
 git submodule update --init --recursive  
+//编译  
+
+
+```
 
 *3.
 https://blog.csdn.net/yanwumuxi/article/details/80097294?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase  
 https://www.ncnynl.com/archives/201709/2013.html
+
+
+
