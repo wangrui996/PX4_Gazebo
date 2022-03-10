@@ -8,6 +8,10 @@
 主要参考其中编译px4的依赖工具
 
 
+安装交叉编译工具  
+
+sudo apt-get install arm-none-eabi-gcc --version
+
 
 
 * 1.新建一个工作区 
