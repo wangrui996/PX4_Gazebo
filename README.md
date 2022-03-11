@@ -51,7 +51,7 @@ libcurl: (51) SSL: no alternative certificate subject name matches target host n
 将~/.ignition/fuel/config.yaml中的 https://api.ignitionfuel.org 改为 https://api.ignitionrobotics.org即可。
 
 
-2.新的带双目相机和IMU的无人机模型，可以在原iris文件夹下的模型的基础上添加双目相机和IMU  
+**2.新的带双目相机和IMU的无人机模型，可以在原iris文件夹下的模型的基础上添加双目相机和IMU**    
 
 3.
 
