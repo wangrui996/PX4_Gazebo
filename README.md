@@ -26,7 +26,7 @@ git clone https://github.com/PX4/Firmware.git
 cd PX4/src  
 //递归到子目录
 cd Firmware/  
-git checkout -b v1.12.0 //与自己实机版本一致  
+git checkout -b v1.9.2 //实机版本1.12.0  
 git submodule update --init --recursive  
 //编译  
 
@@ -54,6 +54,22 @@ libcurl: (51) SSL: no alternative certificate subject name matches target host n
 **2.新的带双目相机和IMU的无人机模型，可以在原iris文件夹下的模型的基础上添加双目相机和IMU**    
 
 3.
+
+
+
+
+## 仿真中设置px4使用外部视觉定位数据  
+
+https://www.yuque.com/xtdrone/manual_cn/ekf_settings
+
+https://editor.csdn.net/md/?articleId=114290211
+
+实机飞行所用版本为1.12.0，实际测试时发现还需要修改磁罗盘参数，不然融合后偏航角错乱，具体参数保存在了笔记本，需要上传到Px4_Control项目  
+
+## Gazebo仿真-PX4 的博客  
+
+https://editor.csdn.net/md/?articleId=114177495
+
 
 
 
